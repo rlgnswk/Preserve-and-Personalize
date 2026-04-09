@@ -1,5 +1,7 @@
 # [ICLR2026] Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift
 
+[paper](https://openreview.net/forum?id=2ge1Y6DWPw) | [project page](https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/)
+
 
 
 ## Toy Experiments
@@ -31,3 +33,14 @@ The saved figures are:
 - `target_data.png`
 - `pretrained_samples.png`
 - `personalized_samples.png`
+
+## BibTeX
+
+```bibtex
+@inproceedings{kim2026preserveandpersonalize,
+  title     = {Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift},
+  author    = {Gihoon Kim and Hyungjin Park and Taesup Kim},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026}
+}
+```
