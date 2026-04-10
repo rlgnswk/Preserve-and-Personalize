@@ -162,6 +162,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Project data
+data/dreambooth/
+
 # pytype static type analyzer
 .pytype/
 

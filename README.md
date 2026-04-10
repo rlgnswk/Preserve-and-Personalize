@@ -1,7 +1,21 @@
 # [ICLR2026] Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift
 
-[paper](https://openreview.net/forum?id=2ge1Y6DWPw) | [project page](https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/)
+[Paper](https://openreview.net/forum?id=2ge1Y6DWPw) | [Project Page](https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/)
 
+
+## Data
+
+The data required for this project can be obtained from
+[google/dreambooth](https://github.com/google/dreambooth).
+
+Please download the DreamBooth data from the official repository and place
+the downloaded files under `data/` in this repository.
+
+Expected location:
+
+```bash
+Preserve-and-Personalize/data/
+```
 
 
 ## Toy Experiments
