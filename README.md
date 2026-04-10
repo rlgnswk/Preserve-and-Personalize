@@ -44,7 +44,6 @@ accelerate launch pnp_sdxl_custom_diffusion.py \
   --gradient_checkpointing \
   --scale_lr \
   --hflip \
-  --prior_generation_precision fp16 \
   --l2_reg_weight 50 \
   --seed 2025 \
   --modifier_token "<new1>"
