@@ -76,13 +76,11 @@ python pnp_sdxl_custom_diffusion_inference.py \
 
 ## Model Guides
 
-For model-specific scripts, hyperparameters, and training/inference examples, see:
+The following guides provide model-specific scripts, hyperparameters, and training/inference examples. The implementations were developed with reference to the [Hugging Face diffusers](https://github.com/huggingface/diffusers/tree/main) library and its example training scripts.
 
 - [SD1.5](./SD1.5/README.md): Full-finetune, Custom Diffusion, and LoRA
 - [SDXL](./SDXL/README.md): Custom Diffusion and LoRA
 - [SD3](./SD3/README.md): Custom Diffusion and LoRA
-
-The implementations in these directories were developed with reference to the [Hugging Face diffusers](https://github.com/huggingface/diffusers/tree/main) library and its example training scripts.
 
 
 ## Note on Hyperparameters
