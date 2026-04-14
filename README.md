@@ -1,6 +1,6 @@
 # [ICLR2026] Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift
 
-[Paper](https://openreview.net/forum?id=2ge1Y6DWPw) | [Project Page](https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/)
+[Paper](https://openreview.net/forum?id=2ge1Y6DWPw) | [Project Page](https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/) | [Poster](https://iclr.cc/virtual/2026/poster/10011710)
 
 ## Setup
 
