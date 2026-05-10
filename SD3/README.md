@@ -48,7 +48,7 @@ python pnp_sd3_custom_diffusion_inference.py \
   --output_path path/to/output/cat_in_the_snow.png
 ```
 
-## SD3 LoRA
+## SD3 LoRA [Temporarily Under Maintenance]
 
 ### Training
 
