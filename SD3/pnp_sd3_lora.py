@@ -1900,7 +1900,7 @@ def main(args):
 
                 recon_loss = loss
                 reg_loss = l2_reg * args.l2_reg_weight
-
+                loss = recon_loss + reg_loss
                 accelerator.backward(loss)
                 if accelerator.sync_gradients:
                     params_to_clip = (

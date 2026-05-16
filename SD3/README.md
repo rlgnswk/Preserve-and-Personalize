@@ -71,7 +71,7 @@ accelerate launch pnp_sd3_lora.py \
   --lr_warmup_steps 0 \
   --max_train_steps 500 \
   --mixed_precision fp16 \
-  --l2_reg_weight 15.0 \
+  --l2_reg_weight 7.5e-8 \
   --seed 0
 ```
 
