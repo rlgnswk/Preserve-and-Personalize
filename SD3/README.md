@@ -48,7 +48,7 @@ python pnp_sd3_custom_diffusion_inference.py \
   --output_path path/to/output/cat_in_the_snow.png
 ```
 
-## SD3 LoRA [Temporarily Under Maintenance]
+## SD3 LoRA
 
 ### Training
 
@@ -69,9 +69,9 @@ accelerate launch pnp_sd3_lora.py \
   --learning_rate 4e-4 \
   --lr_scheduler constant \
   --lr_warmup_steps 0 \
-  --max_train_steps 500 \
+  --max_train_steps 700 \
   --mixed_precision fp16 \
-  --l2_reg_weight 7.5e-8 \
+  --l2_reg_weight 5e-6 \
   --seed 0
 ```
 
