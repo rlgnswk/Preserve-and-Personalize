@@ -219,6 +219,7 @@ import itertools
 import logging
 import math
 import os
+import random
 import shutil
 import warnings
 from pathlib import Path
@@ -783,6 +784,33 @@ def main(args):
     # If passed along, set the training seed now.
     if args.seed is not None:
         set_seed(args.seed)
+
+        random.seed(args.seed)
+        np.random.seed(args.seed)
+        torch.manual_seed(args.seed)
+
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed(args.seed)
+            torch.cuda.manual_seed_all(args.seed)
+
+        try:
+            if hasattr(torch, "npu") and torch.npu.is_available():
+                torch.npu.manual_seed(args.seed)
+                torch.npu.manual_seed_all(args.seed)
+        except Exception:
+            pass
+
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+
+        if hasattr(torch.backends.cuda, "matmul"):
+            torch.backends.cuda.matmul.allow_tf32 = False
+        if hasattr(torch.backends.cudnn, "allow_tf32"):
+            torch.backends.cudnn.allow_tf32 = False
+
+        os.environ["PYTHONHASHSEED"] = str(args.seed)
+
+        print(f"[set_seed_everything] Seed fixed to: {args.seed}")
     if args.concepts_list is None:
         args.concepts_list = [
             {
